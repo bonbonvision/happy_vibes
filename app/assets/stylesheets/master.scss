@@ -1,1 +1,16 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Englebert|Rum+Raisin|The+Girl+Next+Door');
+
+.navbar-brand {
+  font-family: 'Rum Raisin', sans-serif;
+}
+
+.background {
+  display: flex;
+  background: url('bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
+}
