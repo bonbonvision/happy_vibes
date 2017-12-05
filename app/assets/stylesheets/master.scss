@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Englebert|Rum+Raisin|The+Girl+Next+Door');
 
 html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
   background: url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -9,7 +14,28 @@ html {
   background-size: cover;
 }
 
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
 .navbar-brand {
   font-family: 'Rum Raisin', sans-serif;
 }
 
+.next-quote {
+  color: white;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+.footer-blurb {
+  text-align: right;
+}
