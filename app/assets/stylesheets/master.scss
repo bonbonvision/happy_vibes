@@ -1,13 +1,19 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Englebert|Rum+Raisin|The+Girl+Next+Door');
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
   position: relative;
   min-height: 100%;
+  box-sizing: border-box;
 }
 
 body {
-  background: url('bg.jpg') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+  url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,18 +25,50 @@ body {
   margin-bottom: 60px;
 }
 
+.menu {
+  background-color: white;
+  height: 100px;
+}
+
 .navbar-brand {
+  padding-top: 20px;
   font-family: 'Rum Raisin', sans-serif;
+  font-size: 35px;
+  color: black;
 }
 
 
-.nav-link {
-  padding-right: .5rem !important;
-  padding-left: .5rem !important;
+.slogan {
+  font-style: italic;
+  padding-top: 25px;
+  font-color: #adf9ac;
 }
 
 .next-quote {
   color: white;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+header {
+  border-top: 9px solid #222222;
+  color: white;
+}
+
+hr {
+  clear:both;
+}
+
+.clear {
+  clear: both;
 }
 
 
