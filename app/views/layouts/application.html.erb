@@ -16,14 +16,15 @@
   <header class="menu">
     <div class="container">
       <div class="row ">
-        <div class="col-3">
+        <div class="col-3 col-sm-3">
           <%= link_to 'Happy Vibes', root_path, class: 'navbar-brand' %>
         </div>
-        <div class="col-4 hidden-xs-down slogan">
-          "One small positive thought can change your whole day."
+        <div class="col col-sm-4 hidden-xs-down slogan">
+          <h3>One small positive thought can change your whole day.</h3>
         </div>
-        <div class="col-5 links">
+        <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
           <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+          &nbsp; &nbsp; &nbsp;
           <%= link_to 'About', about_path %>
         </div>
       </div>
@@ -73,7 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root_path, class: 'qute' %>
           </div>
           <div class="col-6 footer-blurb">
             Proudly hacked in Charlotte, NC by <a href="http://thefirehoseproject.com">Bonnie</a><br />

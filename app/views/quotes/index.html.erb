@@ -1,4 +1,17 @@
-<div class="container">
-  <h1><%= @quote.saying %></h1>
-  <h2>- <%= @quote.author %></h2>
+
+<div class="container quote-wrapper">
+  <div class="quote-text text-center">
+    <h1><%= @quote.saying %></h1>
+    <h2>- <%= @quote.author %></h2>
+  </div>
 </div>
+
+<br class="clear" />
+
+<br />
+<br />
+<div class="text-center">
+  <%= link_to "Give me another happy quote!", root_path, class: 'next-quote' %>
+</div>
+
+<br class="clear" />
