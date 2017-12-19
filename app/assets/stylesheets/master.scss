@@ -14,8 +14,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin:0;
+  padding:0;
 }
-
 
 
 h1 {
@@ -33,7 +34,9 @@ h2 {
 
 h3 {
   font-family: 'Pompiere', cursive;
-  color: #adf9ac;
+  color: #DBDBDB;
+  font-style: italic;
+  font-size: 25px;
 }
 
 hr {
@@ -44,50 +47,60 @@ hr {
   clear: both;
 }
 
-.menu {
-  background-color: white;
-  height: 100px;
+// Navbar
+
+.navbar {
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background: white;
+    border-top: 9px solid #222222;
+    box-sizing: border-box; 
 }
 
+
 .navbar-brand {
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: 'Rum Raisin', sans-serif;
   font-size: 35px;
   color: black;
+  padding-bottom: 10px;
 }
 
-
-.slogan {
+.contribute {
   padding-top: 25px;
-  font-color: #adf9ac;
+
+}
+
+.contribute a {
+  font-family: 'Pompiere', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #A7AAAB;
+  border: 2px solid;
+  border-color: #A7AAAB;
+  padding: 10px;
 }
 
 
-.links {
-  padding-top: 26px;
-}
 
-.links a {
-  color: black;
-  font-size: 25px;
-  border-bottom: 1px solid #dfdfdf;
-}
+// Quotes 
 
-header {
-  border-top: 9px solid #222222;
-  color: white;
+.content {
+  padding: 25px;
 }
 
 .quote-wrapper {
-  width: 70%;
+  width: 85%;
   max-width: 800px auto;
-  margin-top: 5%
-  // height: 700px auto;
+  margin-top: 12px;
 }
 
 
 .quote-text {
-  padding: 25px;
+  padding: 30px;
   position: relative;
 }
 
@@ -104,11 +117,12 @@ div.quote-text:before {
 
 .next-quote {
   color: #adf9ac;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #adf9ac;
   padding: 10px;
   font-family: 'Pompiere', cursive;
   font-size: 20px;
+  font-weight: bold;
 }
 
 a.next-quote:hover {
@@ -117,14 +131,22 @@ a.next-quote:hover {
   border-color: #CCF2CB;
 }
 
+// Footer
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
 }
 
 .footer-blurb {
   text-align: right;
+  color: #DBDBDB;
+  padding-right: 30px; 
+}
+
+.about {
+  color: #DBDBDB;
+  text-decoration: underline;
 }

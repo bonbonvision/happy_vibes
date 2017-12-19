@@ -1,17 +1,27 @@
 
-<div class="container quote-wrapper">
-  <div class="quote-text text-center">
-    <h1><%= @quote.saying %></h1>
-    <h2>- <%= @quote.author %></h2>
+<section class="content">
+  <div class="slogan text-center">
+    <h3>
+      <span>{ No. <%= @quote.id %> }</span>
+        One small positive thought can change your whole day.
+    </h3>
   </div>
-</div>
 
-<br class="clear" />
+  <div class="container quote-wrapper">
+    <div class="quote-text text-center">
+      <h1><%= @quote.saying %></h1>
+      <br />
+      <h2>- <%= @quote.author %></h2>
+    </div>
+  </div>
 
-<br />
-<br />
-<div class="text-center">
-  <%= link_to "Give me another happy quote!", root_path, class: 'next-quote' %>
-</div>
+  <br class="clear" />
+
+  <br />
+  <div class="text-center">
+    <%= link_to "Give me another happy quote!", root_path, class: 'next-quote' %>
+  </div>
+  <br />
+</section>
 
 <br class="clear" />
